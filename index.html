@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romy's Cleaning Services | Victoria & Vancouver BC</title>
+    <meta name="description" content="Professional cleaning services in Victoria & Vancouver BC. Residential, commercial, deep cleans, and eco-friendly options. Get a free quote today!">
+    <meta name="keywords" content="cleaning services, Victoria BC, Vancouver BC, residential cleaning, commercial cleaning, eco-friendly cleaning">
+    <meta property="og:title" content="Romy's Cleaning Services | Victoria & Vancouver BC">
+    <meta property="og:description" content="Professional cleaning services in Victoria & Vancouver BC. Get a free quote today!">
+    <meta property="og:image" content="/hero.jpg">
+    <meta property="og:url" content="https://romyscleaningservices.com">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Romy's Cleaning Services",
+      "image": "https://romyscleaningservices.com/hero.jpg",
+      "@id": "https://romyscleaningservices.com",
+      "url": "https://romyscleaningservices.com",
+      "telephone": "+1234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Victoria",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.4284,
+        "longitude": -123.3656
+      },
+      "areaServed": ["Victoria, BC", "Vancouver, BC"],
+      "sameAs": [
+        "https://instagram.com/romycleanservices"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --cream: #F5F2EB;
+            --green: #1C3A2A;
+            --gold: #C9A84C;
+            --text-dark: #333333;
+            --text-light: #666666;
+            
+            --font-heading: 'Playfair Display', serif;
+            --font-accent: 'Cormorant Garamond', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--green);
+            line-height: 1.2;
+        }
+
+        .accent-text {
+            font-family: var(--font-accent);
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--green);
+            color: var(--cream);
+        }
+
+        .btn-primary:hover {
+            background-color: #142a1e;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--cream);
+            border: 2px solid var(--cream);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--cream);
+            color: var(--green);
+            transform: translateY(-2px);
+        }
+
+        /* Fade in animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--cream);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--green);
+        }
+
+        .logo-icon img {
+            width: 50px;
+            height: 50px;
+            background-color: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--green);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--green);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(28, 58, 42, 0.7), rgba(28, 58, 42, 0.7)), url('banner/hero.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--cream);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: var(--cream);
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: heroFadeIn 1s ease-out forwards;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            font-family: var(--font-accent);
+            font-size: 1.8rem;
+            opacity: 0;
+            animation: heroFadeIn 1s ease-out 0.3s forwards;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            opacity: 0;
+            animation: heroFadeIn 1s ease-out 0.6s forwards;
+        }
+
+        @keyframes heroFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Services Section */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section-header .accent-text {
+            font-size: 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background-color: rgba(201, 168, 76, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Why Us Section */
+        .why-us {
+            background-color: #fff;
+        }
+
+        .why-us-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .why-us-content {
+            flex: 1;
+        }
+
+        .why-us-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .why-us-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-icon {
+            color: var(--green);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .feature-item h4 {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Before & After Section */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .comparison-slider {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .comparison-img, .comparison-after-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .comparison-after-img {
+            clip-path: polygon(0 0, var(--pos) 0, var(--pos) 100%, 0 100%);
+            z-index: 2;
+        }
+
+        .slider-divider {
+            position: absolute;
+            top: 0;
+            left: var(--pos);
+            width: 3px;
+            height: 100%;
+            background-color: var(--gold);
+            z-index: 3;
+            transform: translateX(-50%);
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 50%;
+            left: var(--pos);
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .slider-handle-btn {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .slider-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: ew-resize;
+            z-index: 4;
+            margin: 0;
+        }
+
+        .comparison-label {
+            position: absolute;
+            bottom: 15px;
+            padding: 5px 15px;
+            background: rgba(28, 58, 42, 0.8);
+            color: var(--cream);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        .label-before { right: 15px; }
+        .label-after { left: 15px; z-index: 3; }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--green);
+            color: var(--cream);
+            overflow: hidden;
+        }
+
+        .testimonials .section-header h2 {
+            color: var(--cream);
+        }
+
+        .testimonial-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 250px;
+        }
+
+        .testimonial-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .testimonial-item.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .stars {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .quote {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .client-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .client-city {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(245, 242, 235, 0.3);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background-color: var(--gold);
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            padding-right: 40px;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-top: 40px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-detail-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(28, 58, 42, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--green);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--green);
+            box-shadow: 0 0 0 2px rgba(28, 58, 42, 0.1);
+        }
+
+        textarea.form-control {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--green);
+            color: var(--cream);
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand .logo {
+            color: var(--cream);
+            margin-bottom: 15px;
+        }
+
+        .footer-brand .logo-icon {
+            background-color: var(--cream);
+            color: var(--green);
+        }
+
+        .footer-tagline {
+            color: var(--gold);
+            font-family: var(--font-accent);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-links h4 {
+            color: var(--cream);
+            margin-bottom: 20px;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(245, 242, 235, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            background-color: var(--gold);
+            color: var(--green);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(245, 242, 235, 0.1);
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+            .why-us-container, .contact-container {
+                flex-direction: column;
+            }
+            .contact-info { padding-right: 0; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--cream);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: var(--transition);
+            }
+            .nav-links.active { left: 0; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.5rem; }
+            .hero-btns { flex-direction: column; }
+            .features-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .testimonial-carousel { height: 300px; }
+        }
+    </style>
+  <script data-arena-recording="true">(function(){
+"use strict";
+var SK="__arena_rec",RRWEB_CDN="https://cdn.jsdelivr.net/npm/rrweb@2.0.0-alpha.4/dist/rrweb.min.js";
+var MAX_RECORDING_MS=600000,MAX_RRWEB_EVENTS=30000,MAX_INTERACTIONS=5000,MAX_CURSOR_POINTS=10000,recStopped=false;
+var stored=null;try{var raw=sessionStorage.getItem(SK);if(raw)stored=JSON.parse(raw);}catch(ex){}
+var meta=stored?stored.m||null:null,rrwebEvents=stored?stored.r||[]:[],rrwebStarted=false,startTime=stored?stored.st||Date.now():Date.now();
+var interactions=stored?stored.i||[]:[],cursorPath=stored?stored.c||[]:[],lastCursorSample=0,lastScrollSample=0;
+var pageHeight=document.documentElement.scrollHeight;
+var viewport={width:window.innerWidth,height:window.innerHeight};
+function isCapped(){if(recStopped)return true;if(Date.now()-startTime>=MAX_RECORDING_MS){recStopped=true;return true;}return false;}
+function persist(){try{var d=JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime});sessionStorage.setItem(SK,d);}catch(ex){rrwebEvents=rrwebEvents.slice(Math.floor(rrwebEvents.length/2));try{sessionStorage.setItem(SK,JSON.stringify({r:rrwebEvents,i:interactions,c:cursorPath,m:meta,st:startTime}));}catch(ex2){}}}
+setInterval(persist,5000);
+window.addEventListener("resize",function(){viewport={width:window.innerWidth,height:window.innerHeight};pageHeight=document.documentElement.scrollHeight;});
+document.addEventListener("click",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var el=e.target;var tag=el.tagName?el.tagName.toLowerCase():"";var text=(el.textContent||"").trim().substring(0,80);var classes=el.className&&typeof el.className==="string"?el.className.substring(0,120):"";interactions.push({type:"click",t:Date.now()-startTime,x:Math.round(e.clientX),y:Math.round(e.clientY),element:{tag:tag,text:text,classes:classes}});},true);
+window.addEventListener("scroll",function(){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;var now=Date.now();if(now-lastScrollSample<200)return;lastScrollSample=now;var scrollY=Math.round(window.scrollY||window.pageYOffset||0);var depthPct=pageHeight>viewport.height?Math.min(100,Math.round(((scrollY+viewport.height)/pageHeight)*100)):100;interactions.push({type:"scroll",t:now-startTime,y:scrollY,depth_pct:depthPct});},{passive:true});
+document.addEventListener("mousemove",function(e){if(isCapped()||cursorPath.length>=MAX_CURSOR_POINTS)return;var now=Date.now();if(now-lastCursorSample<250)return;lastCursorSample=now;cursorPath.push([Math.round(e.clientX),Math.round(e.clientY),now-startTime]);},{passive:true});
+document.addEventListener("keydown",function(e){if(isCapped()||interactions.length>=MAX_INTERACTIONS)return;if(e.target&&(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA"))return;interactions.push({type:"keydown",t:Date.now()-startTime,key:e.key});},true);
+function buildAnalytics(){if(!meta)return null;var ph=document.documentElement.scrollHeight;var maxScroll=0,clickElements={},firstClick=null,firstScroll=null,totalDistance=0;for(var i=0;i<interactions.length;i++){var ev=interactions[i];if(ev.type==="scroll"){if(ev.depth_pct>maxScroll)maxScroll=ev.depth_pct;if(!firstScroll)firstScroll=ev.t;}if(ev.type==="click"){if(!firstClick)firstClick=ev.t;var key=ev.element.tag+":"+ev.element.text.substring(0,30);clickElements[key]=true;}}for(var j=1;j<cursorPath.length;j++){var dx=cursorPath[j][0]-cursorPath[j-1][0];var dy=cursorPath[j][1]-cursorPath[j-1][1];totalDistance+=Math.sqrt(dx*dx+dy*dy);}var duration=Date.now()-startTime;var clickHeatmap=[];for(var k=0;k<interactions.length;k++){if(interactions[k].type==="click")clickHeatmap.push([interactions[k].x,interactions[k].y]);}return{generation_id:meta.generationId,tournament_id:meta.tournamentId,started_at:new Date(startTime).toISOString(),ended_at:new Date().toISOString(),duration_ms:duration,viewport:viewport,page_height:ph,interactions:interactions,cursor_path:cursorPath,click_heatmap:clickHeatmap,summary:{total_clicks:clickHeatmap.length,total_scrolls:interactions.filter(function(e){return e.type==="scroll";}).length,max_scroll_depth_pct:maxScroll,unique_elements_clicked:Object.keys(clickElements).length,time_to_first_click_ms:firstClick,time_to_first_scroll_ms:firstScroll,cursor_distance_px:Math.round(totalDistance),active_time_ms:duration}};}
+function loadRrweb(){if(rrwebStarted)return;rrwebStarted=true;var s=document.createElement("script");s.src=RRWEB_CDN;s.onload=function(){var rec=(window.rrweb&&window.rrweb.record)||window.rrwebRecord;if(!rec)return;rec({emit:function(event){if(rrwebEvents.length>=MAX_RRWEB_EVENTS||isCapped())return;rrwebEvents.push(event);}});};s.onerror=function(){};document.head.appendChild(s);}
+window.addEventListener("message",function(e){if(!e.data||typeof e.data.type!=="string")return;if(e.data.type==="arena:init"){if(!meta)startTime=Date.now();meta={generationId:e.data.generationId||e.data.modelId,tournamentId:e.data.tournamentId};persist();loadRrweb();if(e.source)e.source.postMessage({type:"arena:init-ack",generationId:meta.generationId},"*");}if(e.data.type==="arena:flush"){var resp={type:"arena:recording-data",generationId:meta?meta.generationId:null,rrwebEvents:rrwebEvents,analytics:buildAnalytics()};try{sessionStorage.removeItem(SK);}catch(ex){}if(e.source)e.source.postMessage(resp,"*");}});
+loadRrweb();
+})();</script>
+  <script data-arena-views="true">(function(){var isTop=false;try{isTop=window.self===window.top;}catch(e){}if(!isTop)return;window.__ARENA_META={generationId:"gemini-3.1-pro-preview",tournamentId:"686c2b8e-9f30-4795-b46e-258c64cbbc9f"};var payload={tournamentId:"686c2b8e-9f30-4795-b46e-258c64cbbc9f",modelId:"gemini-3.1-pro-preview"};try{var r=document.referrer;if(r){var u=new URL(r);payload.referrerDomain=u.hostname;}}catch(e){}try{var vid=null;try{vid=localStorage.getItem('arena_vid');}catch(e){}if(!vid){vid=typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():(Date.now().toString(36)+Math.random().toString(36).slice(2)).slice(0,32);try{localStorage.setItem('arena_vid',vid);}catch(e){}}if(vid)payload.viewerId=vid;}catch(e){}try{fetch("https://www.designarena.ai/api/agon/page-views",{"method":"POST","headers":{"Content-Type":"application/json"},"body":JSON.stringify(payload),"keepalive":true});}catch(e){}})();</script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        <path d="M12 12c-2-2-4-2-4-2s0 2 2 4"></path>
+                    </svg> -->
+                    <img src="logo/logo.jpg" alt="logo">
+                </div>
+                Romy's
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#before-after">Before & After</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Clean Home.<br>Peace of Mind.</h1>
+            <p>Serving Victoria & Vancouver BC with reliable, detailed cleaning services.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                <a href="#services" class="btn btn-outline">View Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p class="accent-text">Tailored cleaning solutions for every space</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    </div>
+                    <h3>Residential Cleaning</h3>
+                    <p>Regular maintenance, one-time cleans, and move-in/move-out services to keep your home pristine.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
+                    </div>
+                    <h3>Commercial Cleaning</h3>
+                    <p>Professional office and retail space cleaning to create a welcoming environment for your clients.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    </div>
+                    <h3>Post-Construction</h3>
+                    <p>Thorough removal of dust, debris, and marks after renovations or new builds.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    </div>
+                    <h3>Deep Cleans</h3>
+                    <p>Intensive, top-to-bottom cleaning targeting neglected areas and built-up grime.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+                    </div>
+                    <h3>Eco-Friendly Options</h3>
+                    <p>Safe, non-toxic cleaning products that are tough on dirt but gentle on your family and pets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section-padding why-us">
+        <div class="container why-us-container">
+            <div class="why-us-content fade-in">
+                <h2>Why Choose Romy's?</h2>
+                <p class="accent-text">The gold standard in home care</p>
+                <p style="margin-top: 20px;">We understand that inviting someone into your home requires trust. That's why we've built our business on reliability, exceptional standards, and respect for your space.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Reliable & Trustworthy</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Fully vetted and insured professionals.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Attention to Detail</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">We don't cut corners, we clean them.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Flexible Scheduling</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Weekly, bi-weekly, or custom schedules.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Honest Pricing</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Transparent quotes with no hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Respect for Your Home</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">We treat your property with utmost care.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Locally Owned</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Proudly serving our BC community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-us-image fade-in">
+                <img src="cleaner/cleaner.png" alt="Professional cleaner working">
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section id="before-after" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>See the Transformation</h2>
+                <p class="accent-text">Real results from real homes</p>
+            </div>
+            
+            <div class="comparison-grid">
+                <!-- Slider 1 -->
+                <div class="comparison-slider fade-in" style="--pos: 50%;">
+                    <img src="transformation/dirtybed.png" alt="Before Cleaning" class="comparison-img">
+                    <img src="transformation/cleanbed.png" alt="After Cleaning" class="comparison-after-img">
+                    <div class="slider-divider"></div>
+                    <div class="slider-handle">
+                        <div class="slider-handle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: -8px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" oninput="this.parentElement.style.setProperty('--pos', this.value + '%')">
+                    <div class="comparison-label label-before">Before</div>
+                    <div class="comparison-label label-after">After</div>
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="comparison-slider fade-in" style="--pos: 50%;">
+                    <img src="transformation/dirtykitchen.png" alt="Before Cleaning" class="comparison-img">
+                    <img src="transformation/cleankichten.png" alt="After Cleaning" class="comparison-after-img">
+                    <div class="slider-divider"></div>
+                    <div class="slider-handle">
+                        <div class="slider-handle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: -8px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" oninput="this.parentElement.style.setProperty('--pos', this.value + '%')">
+                    <div class="comparison-label label-before">Before</div>
+                    <div class="comparison-label label-after">After</div>
+                </div>
+
+                <!-- Slider 3 -->
+                <div class="comparison-slider fade-in" style="--pos: 50%;">
+                    <img src="transformation/dirtymeeting.png" alt="Before Cleaning" class="comparison-img">
+                    <img src="transformation/cleanmeeting.png" alt="After Cleaning" class="comparison-after-img">
+                    <div class="slider-divider"></div>
+                    <div class="slider-handle">
+                        <div class="slider-handle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: -8px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider-input" oninput="this.parentElement.style.setProperty('--pos', this.value + '%')">
+                    <div class="comparison-label label-before">Before</div>
+                    <div class="comparison-label label-after">After</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Client Stories</h2>
+                <p class="accent-text">What our clients say about us</p>
+            </div>
+            
+            <div class="testimonial-carousel fade-in">
+                <div class="testimonial-item active">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Romy's team transformed our home! Their attention to detail is unmatched, and coming home to a spotless house is the best feeling. Highly recommend their deep cleaning service."</p>
+                    <div class="client-name">Sarah Jenkins</div>
+                    <div class="client-city">Victoria, BC</div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"We've used several cleaning services in Vancouver, but Romy's is by far the most reliable and thorough. They use eco-friendly products which was very important for our family."</p>
+                    <div class="client-name">Michael Chen</div>
+                    <div class="client-city">Vancouver, BC</div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The post-construction clean they did for our office renovation was incredible. They removed dust from places I didn't even know existed. Professional, punctual, and worth every penny."</p>
+                    <div class="client-name">Emma Thompson</div>
+                    <div class="client-city">Victoria, BC</div>
+                </div>
+            </div>
+            
+            <div class="carousel-dots fade-in">
+                <div class="dot active" onclick="setTestimonial(0)"></div>
+                <div class="dot" onclick="setTestimonial(1)"></div>
+                <div class="dot" onclick="setTestimonial(2)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h2>Ready for a Clean Home?</h2>
+                    <p class="accent-text">Get in touch for a free quote</p>
+                    <p style="margin-top: 20px;">Fill out the form with your details and cleaning needs, and we'll get back to you within 24 hours with a customized quote.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:hello@romyscleaningservices.com">hello@romyscleaningservices.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
+                            <div>
+                                <strong>Instagram</strong><br>
+                                <a href="https://instagram.com/romycleanservices" target="_blank">@romycleanservices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will be in touch soon.');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option value="residential">Residential Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="deep-clean">Deep Clean</option>
+                                <option value="post-construction">Post-Construction</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tell us about your cleaning needs (e.g., number of bedrooms/bathrooms, specific requests)" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Get My Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <img src="logo/logo.jpg" alt="logo">
+                        </div>
+                        Romy's
+                    </a>
+                    <p class="footer-tagline">Local · Reliable · Trusted</p>
+                    <p style="color: #ccc; max-width: 300px;">Providing exceptional cleaning services to homes and businesses across Victoria and Vancouver, BC.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#before-after">Before & After</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="https://instagram.com/romycleanservices" class="social-icon" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Romy's Cleaning Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-links a');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Sticky Header Shrink
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.height = '70px';
+                header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+            } else {
+                header.style.height = '80px';
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Intersection Observer for Fade-in Animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Testimonial Carousel
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-item');
+        const dots = document.querySelectorAll('.dot');
+        let testimonialInterval;
+
+        function setTestimonial(index) {
+            testimonials[currentTestimonial].classList.remove('active');
+            dots[currentTestimonial].classList.remove('active');
+            
+            currentTestimonial = index;
+            
+            testimonials[currentTestimonial].classList.add('active');
+            dots[currentTestimonial].classList.add('active');
+            
+            resetInterval();
+        }
+
+        function nextTestimonial() {
+            let nextIndex = (currentTestimonial + 1) % testimonials.length;
+            setTestimonial(nextIndex);
+        }
+
+        function resetInterval() {
+            clearInterval(testimonialInterval);
+            testimonialInterval = setInterval(nextTestimonial, 4000);
+        }
+
+        // Initialize carousel
+        resetInterval();
+    </script>
+</body>
+</html>
